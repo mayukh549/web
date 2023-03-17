@@ -1,0 +1,27 @@
+body{
+    background-color: aqua;
+}
+
+img:hover{
+    background-color: black;
+}
+/*hover is pseudo class of image*/
+
+/******************************CLASS SELECTORS*********************************/
+.bacon{
+    background-color: goldenrod;
+
+}
+.hotdog{
+    size: 2px;
+
+}
+.circular{
+    border-radius: 5%;
+}
+/************************** ID SELECTOR****************************************/
+#heading{
+    color:red;
+}
+/*class is used for group of items*/
+/*id is used to change a specific item*/
