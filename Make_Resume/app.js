@@ -8,7 +8,7 @@ const mailchimp = require("@mailchimp/mailchimp_marketing");
 const app = express();
 
 mailchimp.setConfig({
-  apiKey: "c8c28c177a1bd9225b62e82390fc91b5-us11",
+  apiKey: "50c7df56e9628214e5a979188ca04615-us11",
   server: "us11",
 });
 
@@ -30,6 +30,7 @@ app.get("/",function(req,res){
     //res.send("welcome aboard to server 3000");
 
 });
+app.use(express.static("storage2"));
 app.post("/",function(req,res){
     var n1 =req.body.FN;
     var n2 =req.body.LN;
@@ -49,7 +50,7 @@ app.post("/",function(req,res){
     };
     add();
     
-    res.send("Thank you baby");
+    res.sendFile(__dirname+"/success.html");
 
 
 
@@ -59,5 +60,5 @@ app.listen(3000,function(){
 });
 
 
-// api key : 40164bf3fc483192b802d901a8f5e6ef-us11
+// api key :50c7df56e9628214e5a979188ca04615-us11
 // audience id : d998cdf5af
