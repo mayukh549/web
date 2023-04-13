@@ -55,9 +55,11 @@ app.post("/",function(req,res){
 
 
 });
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("hello");
 });
+
+
 
 
 // api key :50c7df56e9628214e5a979188ca04615-us11
